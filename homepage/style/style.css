@@ -111,6 +111,53 @@ h1, h2, h3, h4 {
   transform: rotate(-10deg) scale(1.1);
 }
 
+.lineup-section {
+  padding: 5rem 5%;
+  background-color: #fff8e1;
+  text-align: center;
+}
+
+.lineup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.lineup-card {
+  background-color: var(--card-bg);
+  border: 2px dashed var(--mustard);
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lineup-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.lineup-card h3 {
+  font-family: "Staatliches", cursive;
+  color: var(--punk-purple);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.lineup-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lineup-card ul li {
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+
 .ticket-section {
   padding: 6rem 8%;
   background-color: #fff8e1;
@@ -467,6 +514,7 @@ footer {
   opacity: 1;
   transform: none;
 }
+
 
 @media (max-width: 768px) {
   .nav-menu {

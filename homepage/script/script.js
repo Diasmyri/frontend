@@ -112,15 +112,15 @@ if (bookingForm) {
       });
       bookingModal?.classList.remove("active");
       bookingForm.reset();
-//     } else {
-//       Swal.fire({
-//         title: "Gagal",
-//         text: "Semua kolom harus diisi.",
-//         icon: "error"
-//       });
-//     }
-//   });
-// }
+    } else {
+      Swal.fire({
+        title: "Gagal",
+        text: "Semua kolom harus diisi.",
+        icon: "error"
+      });
+    }
+  });
+}
 
 // --- CHECK LOGIN STATUS ---
 async function checkLoginStatus() {
